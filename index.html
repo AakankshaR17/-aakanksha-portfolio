@@ -25,27 +25,33 @@ body{
 a{color:inherit}
 .container{max-width:1200px;margin:auto;padding:32px 20px 90px}
 h1{font-size:36px;margin:0 0 10px}
-h2{margin:0 0 8px}
+h2{margin:0 0 10px}
 h3{margin:0 0 6px}
-p{color:var(--muted)}
+p{color:var(--muted); margin:10px 0}
 section{margin-top:60px}
+
+.muted{color:var(--muted)}
+
 .card{
   background:var(--panel);
   border:1px solid var(--line);
   border-radius:var(--radius);
   padding:22px;
 }
+
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
   gap:18px;
 }
+
 .embed-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
   gap:16px;
   margin-top:18px;
 }
+
 .instagram-media{
   max-width:100%!important;
   min-width:0!important;
@@ -53,6 +59,7 @@ section{margin-top:60px}
   border-radius:14px!important;
   overflow:hidden;
 }
+
 .pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .pill{
   border:1px solid var(--line);
@@ -61,6 +68,43 @@ section{margin-top:60px}
   font-size:13px;
   color:var(--muted);
 }
+
+.profile-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap:16px;
+  margin-top:18px;
+}
+
+.profile-shot{
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+  background:#000;
+}
+
+.profile-shot img{
+  width:100%;
+  display:block;
+}
+
+.caption{
+  padding:10px 12px;
+  font-size:13px;
+  color:var(--muted);
+  background:rgba(255,255,255,.03);
+}
+
+.note{
+  margin-top:14px;
+  padding:12px 12px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.03);
+  color:var(--muted);
+  font-size:13px;
+}
+
 .footer{
   margin-top:80px;
   padding-top:24px;
@@ -79,43 +123,79 @@ section{margin-top:60px}
 <div class="container">
 
 <header>
-  <h1>Product‑led short‑form content for daily brand output.</h1>
+  <h1>Product-led short-form content for daily brand output.</h1>
   <p>
-    Live examples of shot reels and clean product stills, plus end‑to‑end social
+    Live examples of shot reels and clean product stills, plus end-to-end social
     management and Meta ads. All previews below link directly to Instagram.
   </p>
   <div class="pills">
     <span class="pill">Reel workflows</span>
-    <span class="pill">Brand‑first execution</span>
+    <span class="pill">Brand-first execution</span>
     <span class="pill">Reels & Stills</span>
     <span class="pill">Meta Ads</span>
-    <span class="pill">End‑to‑end ownership</span>
+    <span class="pill">End-to-end ownership</span>
   </div>
 </header>
 
+<!-- KANCHI MAIN -->
 <section>
   <div class="card">
-    <h2>Kanchi Australia — End‑to‑End Social & Content Management</h2>
+    <h2>Kanchi Australia — End-to-End Social & Content Management</h2>
     <p>
-      Managed the Instagram account end to end — content planning, daily <b>phone‑shot video</b>
+      Managed the Instagram account end to end — content planning, daily <b>phone-shot video</b>
       and still production, editing, captioning, publishing, community management, and Meta ads.
     </p>
-    <p><strong>Result:</strong> Grew the account from ~6k to ~11k followers in ~6 months.</p>
-    <p>🔗 <a href="https://www.instagram.com/kanchi_australia" target="_blank">instagram.com/kanchi_australia</a></p>
+    <p><strong style="color:var(--text);">Result:</strong> Grew the account from ~6k to ~11k followers in ~6 months.</p>
+    <p>🔗 <a href="https://www.instagram.com/kanchi_australia" target="_blank" rel="noopener">instagram.com/kanchi_australia</a></p>
   </div>
 </section>
 
+<!-- KANCHI CONTEXT SCREENSHOTS -->
+<section>
+  <div class="card">
+    <h2>Kanchi Australia — Account Overview </h2>
+    <p class="muted">
+      Profile and feed screenshots to provide context on volume, consistency,
+      and visual language. Included as proof of ongoing end-to-end management.
+    </p>
+
+    <div class="profile-grid">
+      <div class="profile-shot">
+      <img src="UGC/kanchi-profile.PNG" alt="Kanchi Australia Instagram profile overview">
+        <div class="caption">Profile overview — follower growth, bio, highlights, and posting volume</div>
+      </div>
+
+      <div class="profile-shot">
+        <img src="UGC/kanchi-feed-1.PNG" alt="Kanchi Australia Instagram feed grid">
+        <div class="caption">Feed overview — product-led, consistent visual language</div>
+      </div>
+
+      <div class="profile-shot">
+        <img src="UGC/kanchi-feed-2.PNG" alt="Kanchi Australia Instagram feed grid">
+        <div class="caption">Feed overview — daily in-house content across categories</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong style="color:var(--text);">Note:</strong>
+      These screenshots are included for context only. Individual posts and reels are linked below as live Instagram previews.
+    </div>
+  </div>
+</section>
+
+<!-- REELS -->
 <section>
   <h2>Selected Reels (Shot, Edited & Published by Me)</h2>
   <div class="embed-grid">
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CtS6tNkhNFg/" data-instgrm-version="14"></blockquote>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DP-3SwVDv5S/?igsh=ZXUzcWdtZ24yZmR1" data-instgrm-version="14"></blockquote>
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DRwlLaeEnD8/" data-instgrm-version="14"></blockquote>
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQ4XbOEEoWs/" data-instgrm-version="14"></blockquote>
   </div>
 </section>
 
+<!-- STILLS -->
 <section>
-  <h2>Product Stills </h2>
+  <h2>Product Stills</h2>
   <div class="embed-grid">
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQMYSADkkEi/" data-instgrm-version="14"></blockquote>
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRxWRDykpJe/" data-instgrm-version="14"></blockquote>
@@ -125,22 +205,23 @@ section{margin-top:60px}
   </div>
 </section>
 
+<!-- OTHER + SKILLS -->
 <section>
   <div class="grid">
     <div class="card">
       <h2>Other Accounts</h2>
-      <p><strong>MH Design & Build</strong> — Content strategy & Meta ads (shooting/editing by on‑ground team)</p>
-      <p>🔗 <a href="https://www.instagram.com/mhdesignbuild.in" target="_blank">instagram.com/mhdesignbuild.in</a></p>
+      <p><strong style="color:var(--text);">MH Design & Build</strong> — Content strategy & Meta ads (shooting/editing by on-ground team)</p>
+      <p>🔗 <a href="https://www.instagram.com/mhdesignbuild.in" target="_blank" rel="noopener">instagram.com/mhdesignbuild.in</a></p>
     </div>
 
     <div class="card">
       <h2>Core Skills</h2>
       <ul>
-        <li> product videography & still photography</li>
-        <li>Short‑form reels editing & pacing</li>
+        <li>Product videography & still photography</li>
+        <li>Short-form reels editing & pacing</li>
         <li>Content planning & posting cadence</li>
         <li>Meta Ads setup & creative iteration</li>
-        <li>Product‑focused caption writing</li>
+        <li>Product-focused caption writing</li>
         <li>Daily onsite content workflows</li>
       </ul>
     </div>
@@ -149,7 +230,7 @@ section{margin-top:60px}
 
 <footer class="footer">
   <span>© <span id="year"></span> Aakanksha Rajput</span>
-  <span> content portfolio</span>
+  <span>Content portfolio</span>
 </footer>
 
 </div>
